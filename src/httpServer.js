@@ -603,7 +603,7 @@ exports.initServer = (state, cb) => {
 			{
 				server_public_key: state.server_config.public_key,
 				server_port: state.server_config.port,
-				allowed_ips: state.server_config.allowed_ips,
+				allowed_ips: [ "0.0.0.0/1", "128.0.0.0/1" ],
 				client_ip_address: item.virtual_ip,
 				cidr: state.server_config.cidr,
 				dns: state.server_config.dns,
